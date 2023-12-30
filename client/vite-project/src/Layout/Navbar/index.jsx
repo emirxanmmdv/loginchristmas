@@ -6,9 +6,9 @@ const Navbar = () => {
   return (
     <nav>
         <ul>
+            <li><NavLink to={"/"}>HOME PAGE</NavLink></li>
             <li><NavLink to={"/login"}>LOGIN</NavLink></li>
             <li><NavLink to={"/register"}>REGISTER</NavLink></li>
-            <li><NavLink to={"/adminpanel"}>ADMIN PANEL</NavLink></li>
         </ul>
 
     </nav>

@@ -1,6 +1,11 @@
 .page1 {
+  display: flex;
+  flex-direction: column;
+  .siteHeader {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+  }
   form {
     display: flex;
     justify-content: center;
@@ -9,16 +14,32 @@
     flex-direction: column;
     height: 300px;
     input {
-      width:600px;
+      width: 600px;
       height: 30px;
       outline: none;
     }
-    button {
+    .logIN {
       outline: none;
       align-items: center;
       margin-top: 20px;
       width: 70px;
       height: 20px;
     }
+  }
+}
+.signInSector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .signInText {
+    margin-right: 10px;
+  }
+  .signInBtn {
+    outline: none;
+    align-items: center;
+    width: 70px;
+    height: 20px;
   }
 }

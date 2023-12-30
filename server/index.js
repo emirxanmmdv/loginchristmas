@@ -56,7 +56,7 @@ app.post("/login", async (req, res) => {
     }
     const isPasswordValid =  bcrypt.compare(password, user.password)
     if ( isPasswordValid) {
-      var token = jwt.sign({ userId: user._id, role: user.role}, 'qakif');
+      var token = jwt.sign({ userId: user._id,userName: user.userName, role: user.role}, 'qakif');
       return res.send(token);
     }
     res.send({message:"username or password is invalid"})
